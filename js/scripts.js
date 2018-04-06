@@ -10,9 +10,13 @@ function Pizza(size, toppings, price ) {
 
 Pizza.prototype.totalPrice = function() {
   var pizzaPrice = 4;
-  if (this.size === "size")
-   pizzaPrice
-  
+  if (this.size === "Medium") {
+   pizzaPrice += 2;
+ } else if (this.size === "Large") {
+   pizzaPrice += 4;
+}
+  this.price = pizzaPrice;
+}
 
 
 $(document).ready(function(){
@@ -29,7 +33,7 @@ $(document).ready(function(){
     // $("form-check").submit(function(event){
   });
   console.log(pizzaSize)
-  console.log(pizzaToppings)
+
   });   // })
 
 });
