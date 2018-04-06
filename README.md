@@ -20,7 +20,7 @@ Week 4 - Order Pizza
 | Spec | Input | Output |
 | :   
 |   |  |
-|
+| 
 |
 ## Project github link
 https://adrianmess.github.io/order-pizza/

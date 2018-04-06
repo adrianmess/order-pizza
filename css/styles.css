@@ -2,6 +2,7 @@
   float:left
 }
 
-span.price{
-  float: right
+span::before{
+  content: "\A";
 }
+ 

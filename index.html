@@ -8,73 +8,59 @@
   <title>Order Pizza</title>
 </head>
 <body>
-  <div class="bg"></div>
-  <div class="bg hidden"></div>
+  <div class="container">
+    <form class="form" id="order-form">
 
-  <div id="intro">
-    <a  id="welcomeTo" > Welcome Pizza to order! </a><br>
-    <a id="choose-pizza-size">Choose your toppings to order</a>
-    <p> </p>
-    <div class="row">
-      <div class="col-md-4">
+      <a  id="welcomeTo" > Welcome Pizza to order! </a><br>
+      <a id="choose-pizza-size">Choose your toppings to order</a>
+      <p> </p>
+      <div class="row">
+        <div class="col-md-4" id=order-input>
 
-//Pizze Size list
-        <div class="panel-body" id="pizza-sizes">
-          Choose what size pizza you'd like
-          <br/>
+          <!-- Pizza Size list -->
+          <h1>Choose what size pizza you'd like</h1>
 
-
-            <div class="btn-group-vertical" data-toggle="buttons" >
-
-                <div class="radio">
-                  <label class="btn btn-primary margin-left"><input type="radio" name="optradio" value="small"> Small</label> <span class="price">Price: $4.00</span>
-                </div>
-
-
-                <div class="radio">
-                  <label class="btn btn-primary margin-left"><input type="radio" name="optradio" value="medium"> Medium</label><span class="price">Price: $5.00</span>
-                </div>
-
-
-              <div class="radio">
-                <label class="btn btn-primary margin-left"><input type="radio" name="optradio" value="large"> Large</label><span class="price">Price: $6.00</span>
-              </div>
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza-size" value="small"> Small - Price: $4.00
+              </label>
             </div>
-        </div>
-
-//Pizze Toppings list
-        <div class="panel-body" id="pizza-toppings">
-          Choose what size pizza you'd like
-          <br/>
-
-
-            <div class="btn-group-vertical" data-toggle="buttons" >
-
-                <div class="radio">
-                  <label class="btn btn-primary margin-left"><input type="radio" name="optradio" value="topping"> Pepperoni</label> <span class="price">Price: $1.00</span>
-                </div>
-
-
-                <div class="radio">
-                  <label class="btn btn-primary margin-left"><input type="radio" name="optradio" value="olives"> Olives</label><span class="topping">Price: $.75</span>
-                </div>
-
-
-              <div class="radio">
-                <label class="btn btn-primary margin-left"><input type="radio" name="optradio" value="green-peppers">Green Peppers</label><span class="topping">Price: $1.00</span>
-              </div>
+          </div>
+          <div class="form-group">
+            <div class="radio">
+              <label> 
+                <input type="radio" name="pizza-size" value="Medium"> Medium - Price: $6.00
+              </label>
             </div>
-        </div>
+          </div>
 
-          <button type="submit" class="btn btn-outline-success" id="#submit"  name="button">Submit</button>
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza-size" value="Medium"> Large - Price: $8.00
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- Pizza Toppings list -->
+      <div class="checboxes form-group" id="pizza-toppings">
+        <h1>Choose your pizza toppings</h1>
+        <br>
+        <div class="form-check form-check-inline">
+          <!-- <label class="btn btn-primary margin-left"> -->
 
-        <button type="submit" class="btn btn-outline-success" id="#submit"  name="button">Submit</button>
-
-      </form>
+            <input type="checkbox"  name="toppings" value="pepporoni"> Pepporoni
+          <input type="checkbox" name="toppings" value="olives"> Olives
+          <input type="checkbox" name="toppings" value="green-peppers">Green-peppers
+        </div>
+      </div>
     </div>
-  </div>
 
+
+    <button class="btn btn-outline-success" id="#submit" type="submit" name="button">Submit</button>
+  </form>
 </body>
 </html>
