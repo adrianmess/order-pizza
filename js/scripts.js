@@ -1,4 +1,4 @@
-function Pizza(size, toppings, price ) {
+function Pizza(size, toppings, price) {
   this.size = size;
   this.toppings = toppings;
   this.price;
@@ -32,8 +32,11 @@ $(document).ready(function(){
     allToppings.push(checkedToppings);
     // $("form-check").submit(function(event){
   });
-  console.log(pizzaSize)
 
+    var initPizza = new Pizza(pizzaSize, allToppings);
+    initPizza.totalPrice();
+    console.log(pizzaSize)
+    console.log(initPizza)
   });   // })
 
 });
