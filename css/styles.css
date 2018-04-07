@@ -1,11 +1,10 @@
 
-body {
-  background: url("../img/background.jpg")
-}
 #order-form{
   background-color: rgb(255, 255, 255, 0.8);
 border-radius: 14px;
 border-radius: 14px;
+border-width: 10px;
+border-color: black;
 padding: 25px;
 max-width: 500px;
 margin: auto;
@@ -38,3 +37,24 @@ input {
   color: white;
   padding-top: 10px;
 }
+
+html, body {
+  min-height: 100%;
+}
+body {
+  background: url(../img/background.jpg);
+  -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+  background-repeat:   no-repeat;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
