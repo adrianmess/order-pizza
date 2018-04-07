@@ -20,6 +20,7 @@ Pizza.prototype.totalPrice = function() {
 
 
 $(document).ready(function(){
+  var finalCost= 0;
 
 
   $("form#order-form").submit(function(event){
@@ -30,13 +31,18 @@ $(document).ready(function(){
     $("input:checkbox[name=toppings]:checked").each(function(){
     var checkedToppings = $(this).val();
     allToppings.push(checkedToppings);
-    // $("form-check").submit(function(event){
   });
 
     var initPizza = new Pizza(pizzaSize, allToppings);
     initPizza.totalPrice();
+    var finalPrice = initPizza.price
+    $("#total-price").text(finalPrice.toFixed(2));
+
+    console.log(finalCost)
     console.log(pizzaSize)
     console.log(initPizza)
+    console.log(initPizza.price)
+    console.log(finalPrice)
   });   // })
 
 });
