@@ -19,8 +19,8 @@ Week 4 - Order Pizza
 ### Specs
 | Spec | Input | Output |
 | :   
-| Create Pizza prototype | |
-| Take Pizza size and toppings as form inputs| |
+| Create Pizza prototype | 
+| Take Pizza size and toppings as form inputs | 
 | assign pizza size and toppings to new pizza object  |  |
 | create method to calculate price based on pizza size and toppings. |Pizza.prototype.totalPrice = function() {... | pizza price
 | Take final price and append it to Total section of order page. | pizza price | d
