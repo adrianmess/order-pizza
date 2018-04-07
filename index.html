@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
@@ -8,9 +9,10 @@
   <title>Order Pizza</title>
 </head>
 <body>
+  <h1 id="welcomeTo" > Order Pizza!</h1><br>
   <div class="container">
     <form class="form" id="order-form">
-      <h1 id="welcomeTo" > Order Pizza Online! </h1><br>
+
       <p> </p>
       <div class="row">
         <div class="col-md-6" id=order-input>
@@ -44,13 +46,16 @@
         <h3>Choose your pizza toppings</h3>
         <h5>Additionl toppings: $0.75</h5>
         <br>
-        <div class="form-check form-check-inline">
+        <div class="form-check form-check-inline col-md-2">
           <input type="checkbox"  name="toppings" value="pepporoni"> Pepporoni
           <input type="checkbox" name="toppings" value="olives"> Olives
-          <input type="checkbox" name="toppings" value="green-peppers">Green-peppers
+          <input type="checkbox" name="toppings" value="green-peppers">Green Peppers
+          <input type="checkbox" name="toppings" value="green-peppers">Banana Peppers
+          <input type="checkbox" name="toppings" value="green-peppers">Onion's
+          <input type="checkbox" name="toppings" value="green-peppers">Cheese
         </div>
         <div id="totalPriceDiv" class="col-md-4">
-        <button class="btn btn-outline-success" id="#submit" type="submit" name="button">Submit</button>
+        <button class="btn btn-success" id="#submit" type="submit" name="button">Submit Order</button>
 
           <h2>Total:</h2>
           <h3>$<span id="total-price">0.00</span></h3>

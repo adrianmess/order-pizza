@@ -1,4 +1,16 @@
 
+body {
+  background: url("../img/background.jpg")
+}
+#order-form{
+  background-color: rgb(242, 196, 181, 0.7);
+border-radius: 14px;
+border-radius: 14px;
+padding: 25px;
+max-width: 600px;
+margin: auto;
+}
+
 
 input {
   margin-right: 10px;
@@ -11,4 +23,11 @@ input {
 }
 button#submit {
    margin: 20;
+}
+
+#welcomeTo {
+  font-family: 'Sofia';font-size: 60px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
 }
