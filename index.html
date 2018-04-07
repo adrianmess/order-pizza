@@ -15,7 +15,7 @@
 
       <p> </p>
       <div class="row">
-        <div class="col-md-6" id=order-input>
+        <div class="col-md-8" id=order-input>
           <!-- Pizza Size list -->
           <h3>Choose Pizza Size:</h3>
           <div class="form-group">
@@ -46,18 +46,21 @@
         <h3>Choose your pizza toppings</h3>
         <h5>Additionl toppings: $0.75</h5>
         <br>
-        <div class="form-check form-check-inline col-md-2">
-          <input type="checkbox"  name="toppings" value="pepporoni"> Pepporoni
-          <input type="checkbox" name="toppings" value="olives"> Olives
-          <input type="checkbox" name="toppings" value="green-peppers">Green Peppers
-          <input type="checkbox" name="toppings" value="green-peppers">Banana Peppers
-          <input type="checkbox" name="toppings" value="green-peppers">Onion's
-          <input type="checkbox" name="toppings" value="green-peppers">Cheese
-        </div>
+        <div class="form-check col-md-8">
+
+            <li><input type="checkbox"  name="toppings" value="pepporoni"> Pepporoni</li>
+            <li><input type="checkbox" name="toppings" value="olives">Olives</li>
+            <li><input type="checkbox" name="toppings" value="green-peppers">Green Peppers</li>
+            <li><input type="checkbox" name="toppings" value="green-peppers">Banana Peppers</li>
+            <li><input type="checkbox" name="toppings" value="green-peppers">Onion's</li>
+            <li><input type="checkbox" name="toppings" value="green-peppers">Cheese</li>
+          </div>
+
+
         <div id="totalPriceDiv" class="col-md-4">
         <button class="btn btn-success" id="#submit" type="submit" name="button">Submit Order</button>
 
-          <h2>Total:</h2>
+          <h2 id="total">Total:</h2>
           <h3>$<span id="total-price">0.00</span></h3>
         </div>
       </div>

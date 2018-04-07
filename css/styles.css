@@ -3,15 +3,17 @@ body {
   background: url("../img/background.jpg")
 }
 #order-form{
-  background-color: rgb(242, 196, 181, 0.7);
+  background-color: rgb(255, 255, 255, 0.8);
 border-radius: 14px;
 border-radius: 14px;
 padding: 25px;
-max-width: 600px;
+max-width: 500px;
 margin: auto;
 }
 
-
+li {
+  list-style-type: none;
+}
 input {
   margin-right: 10px;
 }
@@ -21,8 +23,13 @@ input {
 input {
   margin-right: 10px;
 }
-button#submit {
-   margin: 20;
+#totalPriceDiv {
+   padding-top: 20px;
+}
+
+#total {
+  padding-top: 20px;
+  margin: auto;
 }
 
 #welcomeTo {
