@@ -10,16 +10,12 @@
 <body>
   <div class="container">
     <form class="form" id="order-form">
-
-      <a  id="welcomeTo" > Welcome Pizza to order! </a><br>
-      <a id="choose-pizza-size">Choose your toppings to order</a>
+      <h1 id="welcomeTo" > Order Pizza Online! </h1><br>
       <p> </p>
       <div class="row">
-        <div class="col-md-4" id=order-input>
-
+        <div class="col-md-6" id=order-input>
           <!-- Pizza Size list -->
-          <h1>Choose what size pizza you'd like</h1>
-
+          <h3>Choose Pizza Size:</h3>
           <div class="form-group">
             <div class="radio">
               <label>
@@ -34,7 +30,6 @@
               </label>
             </div>
           </div>
-
           <div class="form-group">
             <div class="radio">
               <label>
@@ -44,27 +39,23 @@
           </div>
         </div>
       </div>
-
       <!-- Pizza Toppings list -->
       <div class="checboxes form-group" id="pizza-toppings">
-        <h1>Choose your pizza toppings</h1>
-        <h3>Additionl toppings: $0.75</h3>
+        <h3>Choose your pizza toppings</h3>
+        <h5>Additionl toppings: $0.75</h5>
         <br>
         <div class="form-check form-check-inline">
-          <!-- <label class="btn btn-primary margin-left"> -->
-
-            <input type="checkbox"  name="toppings" value="pepporoni"> Pepporoni
+          <input type="checkbox"  name="toppings" value="pepporoni"> Pepporoni
           <input type="checkbox" name="toppings" value="olives"> Olives
           <input type="checkbox" name="toppings" value="green-peppers">Green-peppers
         </div>
+        <div id="totalPriceDiv" class="col-md-4">
+        <button class="btn btn-outline-success" id="#submit" type="submit" name="button">Submit</button>
+
+          <h2>Total:</h2>
+          <h3>$<span id="total-price">0.00</span></h3>
+        </div>
       </div>
-    </div>
-
-
-    <button class="btn btn-outline-success" id="#submit" type="submit" name="button">Submit</button>
-    <div id="totalPriceDiv" class="">
-      <h2>Total:</h2>
-      <h3>$<span id="total-price">0.00</span></h3>
     </div>
 
   </form>

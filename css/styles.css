@@ -1,8 +1,14 @@
-.radio {
-  float:left
+
+
+input {
+  margin-right: 10px;
 }
 
-span::before{
-  content: "\A";
+
+
+input {
+  margin-right: 10px;
 }
- 
+button#submit {
+   margin: 20;
+}
