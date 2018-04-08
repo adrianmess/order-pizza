@@ -42,7 +42,7 @@ html, body {
   min-height: 100%;
 }
 body {
-  background: url(../img/background.JPG);
+  background: url(../img/background.jpg);
   -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
